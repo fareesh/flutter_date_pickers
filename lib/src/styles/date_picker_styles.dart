@@ -348,7 +348,7 @@ class DatePickerRangeStyles extends DatePickerStyles {
   }
 
   @override
-  int get hashCode => hashValues(
+  int get hashCode => Object.hash(
       selectedPeriodStartDecoration,
       selectedPeriodStartTextStyle,
       selectedPeriodLastDecoration,
@@ -395,5 +395,5 @@ class DayHeaderStyle {
   }
 
   @override
-  int get hashCode => hashValues(textStyle, decoration);
+  int get hashCode => Object.hash(textStyle, decoration);
 }
